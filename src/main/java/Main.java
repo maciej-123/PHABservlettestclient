@@ -14,7 +14,7 @@ public class Main {
         //GET_Requests g2 = new GET_Requests("https://phabservlet1.herokuapp.com/create_test_database");
         //GET_Requests g3 = new GET_Requests("https://phabservlet1.herokuapp.com/return_phab_paddington");
 
-        String message = "vicks@vaporub";
+        String message = "gaviscon@chewable";
 
         POST_Requests p = new POST_Requests(message,"https://phabservlet1.herokuapp.com/_decreaseStock");
         GET_Requests g = new GET_Requests("https://phabservlet1.herokuapp.com/_decreaseStock");
