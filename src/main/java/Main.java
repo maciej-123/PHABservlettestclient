@@ -15,11 +15,18 @@ public class Main {
         //GET_Requests g3 = new GET_Requests("https://phabservlet1.herokuapp.com/return_phab_paddington");
 
         String message = "gaviscon@chewable";
+        String message2 = "cuprofen@max strength";
 
-        POST_Requests p = new POST_Requests(message,"https://phabservlet1.herokuapp.com/_decreaseStock");
-        GET_Requests g = new GET_Requests("https://phabservlet1.herokuapp.com/_decreaseStock");
+        //decrements one item - if want more put in loop
+        POST_Requests p = new POST_Requests(message2,"https://phabservlet1.herokuapp.com/_decreaseStockPaddington");
 
+        //GET_Requests g = new GET_Requests("https://phabservlet1.herokuapp.com/_decreaseStockPaddington");
 
+        //GET_Requests g2 = new GET_Requests("https://phabservlet1.herokuapp.com/getLimitOnePaddington");
+        GET_Requests g2 = new GET_Requests("https://phabservlet1.herokuapp.com/getLimitOneGreenPark");
+        //GET_Requests g2 = new GET_Requests("https://phabservlet1.herokuapp.com/getLimitOneMileEnd");
+
+        //need reference to tutorial 6
         //System.out.println(g.returnText());
         //database_on_local_host_test dbtest = new database_on_local_host_test();
     }
