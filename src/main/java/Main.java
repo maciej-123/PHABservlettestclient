@@ -17,14 +17,45 @@ public class Main {
         String message = "gaviscon@chewable";
         String message2 = "cuprofen@max strength";
 
-        //decrements one item - if want more put in loop
-        POST_Requests p = new POST_Requests(message2,"https://phabservlet1.herokuapp.com/_decreaseStockPaddington");
+        String Branch1 = "Paddington";
+        String Branch2 = "MileEnd";
+        String Branch3 = "GreenPark";
 
-        //GET_Requests g = new GET_Requests("https://phabservlet1.herokuapp.com/_decreaseStockPaddington");
+       //put branch, manufacturer and name into servlet via post request
+        POST_Requests P = new POST_Requests(Branch2,"https://phabservlet1.herokuapp.com/_inputManufacturerName");
+        POST_Requests p2 = new POST_Requests(message2,"https://phabservlet1.herokuapp.com/_decreaseStockPaddington");
 
-        //GET_Requests g2 = new GET_Requests("https://phabservlet1.herokuapp.com/getLimitOnePaddington");
-        GET_Requests g2 = new GET_Requests("https://phabservlet1.herokuapp.com/getLimitOneGreenPark");
-        //GET_Requests g2 = new GET_Requests("https://phabservlet1.herokuapp.com/getLimitOneMileEnd");
+
+        //search for drug example
+       //GET_Requests g = new GET_Requests("https://phabservlet1.herokuapp.com/searchForDrug");
+
+
+        //getlimitone test
+      //GET_Requests g = new GET_Requests("https://phabservlet1.herokuapp.com/getLimitOne");
+
+      //delete test
+        //GET_Requests g = new GET_Requests("https://phabservlet1.herokuapp.com/delete_phab");
+
+//        GET_Requests g = new GET_Requests("https://phabservlet1.herokuapp.com/fill_phab");
+
+
+        //test fill
+        //GET_Requests g = new GET_Requests("https://phabservlet1.herokuapp.com/testfill_phab");
+
+        //test delete
+        //GET_Requests g = new GET_Requests("https://phabservlet1.herokuapp.com/testdelete_phab");
+
+        //GET_Requests g = new GET_Requests("https://phabservlet1.herokuapp.com/replenishStock");
+
+        //GET_Requests g = new GET_Requests("https://phabservlet1.herokuapp.com/calculateProfit");
+
+        //GET_Requests g = new GET_Requests("https://phabservlet1.herokuapp.com/calculateRevenue");
+
+
+        //GET_Requests g = new GET_Requests("https://phabservlet1.herokuapp.com/_checkStock");
+
+
+
 
         //need reference to tutorial 6
         //System.out.println(g.returnText());
