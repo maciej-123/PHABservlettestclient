@@ -22,7 +22,7 @@ public class Main {
         String Branch3 = "GreenPark";
 
        //put branch, manufacturer and name into servlet via post request
-        POST_Requests P = new POST_Requests(Branch2,"https://phabservlet1.herokuapp.com/inputB");
+        POST_Requests p = new POST_Requests(Branch2,"https://phabservlet1.herokuapp.com/inputB");
         POST_Requests p2 = new POST_Requests(message2,"https://phabservlet1.herokuapp.com/inputMN");
 
         //search for drug example
@@ -47,12 +47,23 @@ public class Main {
         //GET_Requests g = new GET_Requests("https://phabservlet1.herokuapp.com/replenishStock");
 
         //GET_Requests g = new GET_Requests("https://phabservlet1.herokuapp.com/calculateProfit");
+        //System.out.println(g.returnText());
 
-        //GET_Requests g = new GET_Requests("https://phabservlet1.herokuapp.com/calculateRevenue");
+        //GET_Requests g2 = new GET_Requests("https://phabservlet1.herokuapp.com/calculateRevenue");
 
         //GET_Requests g = new GET_Requests("https://phabservlet1.herokuapp.com/_checkStock");
 
-        //GET_Requests g = new GET_Requests("https://phabservlet1.herokuapp.com/_decreaseStock");
+
+        POST_Requests P = new POST_Requests(Branch2,"https://phabservlet1.herokuapp.com/inputB");
+        POST_Requests P2= new POST_Requests(message2,"https://phabservlet1.herokuapp.com/inputMN");
+        int num = 3;
+        GET_Requests G = new GET_Requests("https://phabservlet1.herokuapp.com/_decreaseStock");
+        for(int i = 0; i < num; i++)
+        {
+            P.makePostRequest(Branch2,"https://phabservlet1.herokuapp.com/inputB");
+            P2.makePostRequest(message2,"https://phabservlet1.herokuapp.com/inputMN");
+            G.makeGetRequest("https://phabservlet1.herokuapp.com/_decreaseStock");
+        }
 
 
         //GET_Requests g = new GET_Requests("https://phabservlet1.herokuapp.com/return_phab_mileend");
