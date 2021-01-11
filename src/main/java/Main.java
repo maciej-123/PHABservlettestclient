@@ -23,7 +23,10 @@ public class Main {
 
        //put branch, manufacturer and name into servlet via post request
         POST_Requests p = new POST_Requests(Branch2,"https://phabservlet1.herokuapp.com/inputB");
-        POST_Requests p2 = new POST_Requests(message2,"https://phabservlet1.herokuapp.com/inputMN");
+        //POST_Requests p2 = new POST_Requests(message2,"https://phabservlet1.herokuapp.com/inputMN");
+
+
+
 
         //search for drug example
         //GET_Requests g = new GET_Requests("https://phabservlet1.herokuapp.com/searchForDrug");
@@ -33,9 +36,9 @@ public class Main {
       //GET_Requests g = new GET_Requests("https://phabservlet1.herokuapp.com/getLimitOne");
 
       //delete test
-        //GET_Requests g = new GET_Requests("https://phabservlet1.herokuapp.com/delete_phab");
+        GET_Requests g = new GET_Requests("https://phabservlet1.herokuapp.com/delete_phab");
 
-//        GET_Requests g = new GET_Requests("https://phabservlet1.herokuapp.com/fill_phab");
+        //GET_Requests g = new GET_Requests("https://phabservlet1.herokuapp.com/fill_phab");
 
 
         //test fill
@@ -54,16 +57,16 @@ public class Main {
         //GET_Requests g = new GET_Requests("https://phabservlet1.herokuapp.com/_checkStock");
 
 
-        POST_Requests P = new POST_Requests(Branch2,"https://phabservlet1.herokuapp.com/inputB");
-        POST_Requests P2= new POST_Requests(message2,"https://phabservlet1.herokuapp.com/inputMN");
-        int num = 3;
-        GET_Requests G = new GET_Requests("https://phabservlet1.herokuapp.com/_decreaseStock");
-        for(int i = 0; i < num; i++)
-        {
-            P.makePostRequest(Branch2,"https://phabservlet1.herokuapp.com/inputB");
-            P2.makePostRequest(message2,"https://phabservlet1.herokuapp.com/inputMN");
-            G.makeGetRequest("https://phabservlet1.herokuapp.com/_decreaseStock");
-        }
+//        POST_Requests P = new POST_Requests(Branch2,"https://phabservlet1.herokuapp.com/inputB");
+//        POST_Requests P2= new POST_Requests(message2,"https://phabservlet1.herokuapp.com/inputMN");
+//        int num = 3;
+//        GET_Requests G = new GET_Requests("https://phabservlet1.herokuapp.com/_decreaseStock");
+//        for(int i = 0; i < num; i++)
+//        {
+//            P.makePostRequest(Branch2,"https://phabservlet1.herokuapp.com/inputB");
+//            P2.makePostRequest(message2,"https://phabservlet1.herokuapp.com/inputMN");
+//            G.makeGetRequest("https://phabservlet1.herokuapp.com/_decreaseStock");
+//        }
 
 
         //GET_Requests g = new GET_Requests("https://phabservlet1.herokuapp.com/return_phab_mileend");
